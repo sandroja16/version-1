@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2? family=Caramel&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+/*___________________reset___________________*/
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*___________________reset___________________*/
+.header__principal {
+  padding: 15px 50px 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #131313;
+  font-family: 'Caramel', cursiva; }
+  .header__principal .logo {
+    text-align: center;
+    flex-wrap: wrap; }
+    .header__principal .logo img {
+      width: 50px;
+      height: 50px; }
+    .header__principal .logo h1 {
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.08px;
+      color: white; }
+    .header__principal .logo h3 {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.25px;
+      color: #A0A0A0; }
+  .header__principal .menu {
+    color: #f4f4f4;
+    height: 70px; }
+    .header__principal .menu .menu__links {
+      height: 100%;
+      transition: transform .5s;
+      display: flex; }
+      .header__principal .menu .menu__links .menu__item {
+        list-style: none;
+        position: relative;
+        height: 100%;
+        --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+        --transform: rotate(-90deg); }
+        .header__principal .menu .menu__links .menu__item .menu__link {
+          color: #f4f4f4;
+          text-decoration: none;
+          padding: 0 30px;
+          display: flex;
+          height: 100%;
+          align-items: center; }
+        .header__principal .menu .menu__links .menu__item .menu__link:hover {
+          background-color: #1c1c1c; }
+        .header__principal .menu .menu__links .menu__item .menu__arrow {
+          transform: var(--transform);
+          transition: transform .3s;
+          display: block;
+          margin-left: 3px; }
+        .header__principal .menu .menu__links .menu__item .menu__nesting {
+          list-style: none;
+          transition: clip-path .3s;
+          clip-path: var(--clip);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: max-content;
+          transform: translateY(100%);
+          background-color: #1B262C; }
+          .header__principal .menu .menu__links .menu__item .menu__nesting .menu__inside .menu__link--inside {
+            padding: 30px 100px 30px 20px; }
+          .header__principal .menu .menu__links .menu__item .menu__nesting .menu__inside .menu__link--inside:hover {
+            background-color: #1c1c1c;
+            border-radius: 24px; }
+      .header__principal .menu .menu__links .menu__item:hover {
+        --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        --transform: rotate(0); }
+  .header__principal #searchContent {
+    padding: 3px 20px; }
+    .header__principal #searchContent #search {
+      padding: 10px;
+      border: none;
+      font-size: 15px;
+      background-color: white;
+      border: 1px #a7a7a7 solid; }
+    .header__principal #searchContent #search:focus {
+      outline: none; }
+    .header__principal #searchContent #search::placeholder {
+      background-image: url("assets/logo/search.png");
+      background-repeat: no-repeat;
+      background-position-x: 90%;
+      background-size: contain; }
+    .header__principal #searchContent img {
+      width: 15px;
+      margin-left: 15px; }
+
+.header_page {
+  display: flex;
+  width: 100%;
+  height: 90vh; }
+  .header_page .navbar_left {
+    background-color: #1c1c1c;
+    border-right: 2px solid black;
+    width: 20%;
+    height: 90vh;
+    text-align: right; }
+    .header_page .navbar_left ul li a {
+      font-size: medium;
+      text-decoration: none;
+      font-family: 'Caramel', cursiva;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ccc;
+      padding: 60px 20px 5px 20px; }
+    .header_page .navbar_left ul li a:hover {
+      color: #bdbdca; }
+    .header_page .navbar_left ul li:hover {
+      background-color: #494949; }
+  .header_page .section_page {
+    width: 100%;
+    height: 100%;
+    background-color: #494949; }
+    .header_page .section_page p {
+      font-family: 'Caramel', cursiva;
+      font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
